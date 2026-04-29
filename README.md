@@ -1,6 +1,5 @@
 # Intent-Qualification
 
-Task
 Your mission is to build a ranking and qualification system that determines whether a company truly matches a user’s request.
 
 Imagine a user asks: “Find logistics companies in Germany.”
