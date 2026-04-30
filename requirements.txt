@@ -1,2 +1,4 @@
 pandas
 scikit-learn
+rank-bm25
+faiss-cpu
