@@ -7,8 +7,8 @@ I used two different methods and combined them:
   -> 2.1 BM25 (keyword-based search)  
 I used BM25 to find companies based on exact keyword matches.  
 In simple terms:  
-  - if the query contains “Germany”, it looks for companies related to Germany  
-  - if the query contains “logistics”, it looks for logistics-related companies  
+  -> if the query contains “Germany”, it looks for companies related to Germany  
+  -> if the query contains “logistics”, it looks for logistics-related companies   
 This method is very good for precise keyword matching.  
   -> 2.2 Semantic search (embeddings)  
 I used a SentenceTransformer model to understand the meaning of the text.It converts text into vectors and compares meaning instead of exact words.  
@@ -25,16 +25,16 @@ Then I:
   
 4. Challenges I faced   
 -> Inconsistent data  
-The dataset contained:  
-  -None values   
-  -strings  
-  -sometimes dictionaries  
-Because of this, I had to convert everything safely into strings and to add checks before accessing fields.   
--> Type errors  
-I encountered errors such as:  
-  -NoneType errors  
-  -tuple vs object mismatches  
-  -dictionary vs string inconsistencies  
+  The dataset contained:  
+    -None values   
+    -strings  
+    -sometimes dictionaries  
+  Because of this, I had to convert everything safely into strings and to add checks before accessing fields.   
+  -> Type errors  
+  I encountered errors such as:  
+    -NoneType errors  
+    -tuple vs object mismatches  
+    -dictionary vs string inconsistencies  
 I fixed them by making the code more defensive and robust.  
   
 6. Design decisions   
