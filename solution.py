@@ -16,7 +16,6 @@ def run(query, companies, bm25):
     bm25_results = bm25_search(bm25, companies, query, k=5)
     embed_results = embed_search(companies, query, k=5)
 
-    # combinare simplă (poți upgrada ulterior)
     seen = set()
     results = []
 
@@ -32,7 +31,6 @@ def run(query, companies, bm25):
 if __name__ == "__main__":
     companies = load_data("data/companies.jsonl")
 
-    # IMPORTANT: build o singură dată (nu în loop)
     bm25, _ = build_bm25(companies)
 
     while True:
