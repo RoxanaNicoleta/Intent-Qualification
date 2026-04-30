@@ -1,7 +1,6 @@
 from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
-# optional embedding model (loaded o singură dată)
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
